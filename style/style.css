@@ -1,0 +1,83 @@
+@font-face {
+    font-family:"custom" ;
+    src: url("./roboto/Roboto-Regular.ttf");
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+
+    /*mes couleurs*/ 
+    --col-dark-main : #0b1622;
+    --col-dark-alt : #0d2a38;
+    --col-light : #c2eef4;
+    --col-shadow : #c2eef400;
+}
+
+html{
+    font-size: 20px;
+}
+
+body {
+    font-family: "custom", sans-serif;
+    background-color: var(--col-dark-main);
+    color: var(--col-light);
+}
+
+header {
+    background-color: var(--col-dark-alt);
+}
+
+/* partie main */
+
+#inter1 {
+    background-image: url("../assets/pictures/inter1.png");  
+}
+
+#inter2 {
+    background-image: url("../assets/pictures/inter2.png");
+}
+
+.inter-article {
+    width: 100vw;
+    aspect-ratio: 3/1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* réglages des articles */
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+
+
+    width: 75%;
+    padding: 30px;
+    margin: 15px;
+
+    background-color: var(--col-dark-alt);
+    border-radius: 10px;
+    box-shadow: var(--col-shadow) 2px 2px 4px 0;
+    
+
+}
+
+.art-text {
+    width: 45%;
+}
+
+.art-illus {
+    display: block;
+    width: 45%;
+}
+
+footer {
+    background-color: var(--col-dark-alt);
+}
+
