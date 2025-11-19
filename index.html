@@ -13,31 +13,37 @@
 <body>
 
     <header>
-        <img src="./assets/icons/logoE2Clib.png" alt="Logo du site">
-        <h1>E2C Lib - Accueil</h1>
+        <div class="header-title">             
+            <img src="./assets/icons/logoE2Clib.png" alt="Logo du site">
+            <h1>E2C Lib - Accueil</h1>
+        </div>
         <nav>
-            <a href="#">Catalogue</a>
-            <a href="#">Détente</a>
-            <a href="#">Collection</a>
+            <a class="btn btn-dark" href="#">Catalogue</a>
+            <a class="btn btn-dark" href="#">Détente</a>
+            <a class="btn btn-light" href="#">Connexion</a>
         </nav>
     </header>
 
     <main>
         <article>
-            <h2>L'e2c, c'est quoi?</h2>
+            <div class="art-text">
+            <h2>L'E2C, c'est quoi?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quod fugit praesentium aperiam veniam voluptatibus nobis atque magni quos, est eaque illo porro, optio rem officia! Placeat ea repellendus commodi atque? Esse ullam iure sed adipisci qui odio vitae accusamus neque quisquam laboriosam dolor quasi soluta excepturi unde odit ducimus tempore eius accusantium fugiat, dolore repellendus ipsa quaerat modi architecto?</p>
             <p>Dolor ipsum debitis, cupiditate voluptate numquam illum laborum veritatis nihil, fugit reiciendis repellat, in veniam quis quod minima consequatur cum quisquam dignissimos asperiores est! Tempora pariatur inventore impedit odit esse! Cum mollitia, rerum sint ut laudantium laborum temporibus inventore aperiam nihil, animi consectetur pariatur dolorum nisi numquam officia quo error obcaecati facere assumenda dolore ducimus nam! Facilis impedit ut sapiente.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/q8IXhr6b304?si=qpEwKEIkdAj_N8_f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <iframe class="art-illus" src="https://www.youtube.com/embed/q8IXhr6b304?si=qpEwKEIkdAj_N8_f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </article>
 
         <div class="inter-article" id="inter1"></div>
 
         <article>
-            <img src="./assets/pictures/article-pic1.png" alt="Le groupe prép num">
+            <img class="art-illus" src="./assets/pictures/article-pic1.png" alt="Le groupe prép num">
+            <div class="art-text">
             <h2>La Prépa Num à l'E2C</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, iusto? Explicabo pariatur eligendi voluptatibus optio magni voluptas. Atque quo impedit blanditiis mollitia est exercitationem placeat officiis a, esse alias? Libero praesentium nostrum voluptatum optio beatae?</p>
             <p>Iste minima nobis nihil suscipit, quibusdam tenetur recusandae eligendi quis esse exercitationem minus maxime, ullam numquam? Voluptatum explicabo a eos quibusdam labore nihil laborum error! Delectus, sint doloribus. Est dolorum quia maxime pariatur impedit. Doloremque!</p>
             <p>Vel harum unde fuga vero veritatis modi eveniet ducimus ex quidem. Accusantium voluptatum eaque modi sapiente odit culpa hic aspernatur tempore obcaecati assumenda? Quia reprehenderit voluptas dolorem commodi illo temporibus. Suscipit quibusdam est iste explicabo.</p>
+            </div>
         </article>
         
         <div class="inter-article" id="inter2"></div>
@@ -53,8 +59,10 @@
     </main>
 
     <footer>
-        <p>Site créé par la Prépa Numérique de l'E2C - Grand Lille, Site d'Armentière</p>
-        <a href="#">Nous contacter</a>
+        <div class="foot-right">
+            <p>Site créé par la Prépa Numérique de l'E2C - Grand Lille, Site d'Armentière</p>
+            <a class="btn btn-light" href="#">Nous contacter</a>
+        </div>
     </footer>
 </body>
 </html>
