@@ -140,17 +140,14 @@ article {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-
-
     width: 75%;
     padding: 30px;
-
     background-color: var(--col-dark-alt);
     border-radius: 10px;
     box-shadow: var(--col-shadow) 2px 2px 4px 0;
-    
 
 }
+
 
 .art-text {
     width: 45%;
@@ -158,7 +155,12 @@ article {
 
 .art-illus {
     display: block;
-    width: 45%;
+    width: 35%;
+    border-radius: 15px;
+}
+
+iframe {
+    aspect-ratio: 560/315;
 }
 
 footer {
