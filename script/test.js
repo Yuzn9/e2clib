@@ -17,7 +17,6 @@ console.log(number1 % number2)
 
 username = "Azuy"
 console.log (username) 
-*/
 
 let firstname;
 let lastname;
@@ -26,3 +25,11 @@ firstname = prompt("Quel est votre prénom ?");
 lastname = prompt("Quel est votre nom de famille ?");
 
 alert(`Bonjour ${firstname} ${lastname}, comment vas-tu ?`); 
+*/ 
+
+function firstFunction() {
+    console.log("La fonction fonctionne")
+}
+
+firstFunction();
+
