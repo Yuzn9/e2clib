@@ -12,7 +12,7 @@
     --col-dark-main : #0b1622;
     --col-dark-alt : #0d2a38;
     --col-light : #c2eef4;
-    --col-shadow : #c2eef400;
+    --col-shadow : #c2eef4ab;
 }
 
 html{
@@ -187,4 +187,93 @@ footer {
 
 .js-zone {
     margin: 5px;
+}
+
+/* Zone de connexion */
+
+#connect-background {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff2a;
+    z-index: 20;
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 500ms;
+
+}
+
+#connect-form {
+    background-color: var(--col-dark-main);
+    color: var(--col-light);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: var(--col-shadow) 2px 2px 4px 0;
+    width: 40%;
+
+}
+
+#connect-form>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#connect-form>form>* {
+    display: block;
+    margin: 5px 0;
+
+}
+
+#connect-form>form>label {
+    font-size: 1.5rem;
+}
+
+#connect-form>form>input {
+    font-size: 1.5rem;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--col-light);
+    color: var(--col-dark-main);
+    padding: 5px;
+}
+
+#connect-form>form>input:focus {
+    background-color: var(--col-dark-main);
+    color: var(--col-light);
+    box-shadow: var(--col-shadow) 1px 1px 2px 0;
+
+}
+
+#connect-form>form>.btn {
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
+
+.close-button {
+    position: absolute;
+    top: 33vh;
+    right: 31vw;
+    width: 3%;
+    aspect-ratio: 1;
+    background-color: var(--col-dark-main);
+    color: var(--col-light);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: var(--col-light);
+    color: var(--col-dark-main);
 }
