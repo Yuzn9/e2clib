@@ -90,3 +90,33 @@ CREATE VIEW books_vw AS (SELECT books.title AS Titre, books.auteur AS Auteur, bo
 INNER JOIN genres ON books.genres_id = genres.id
 INNER JOIN formats ON books.formats_id = formats.id
 INNER JOIN languages ON books.languages_id = languages.id);
+
+COUNT()
+AVG()
+MIN()
+MAX()
+
+
+ALTER TABLE books 
+ADD COLUMN user_id SMALLINT UNSIGNED;
+
+ALTER TABLE books
+ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id);
+
+SELECT books.title, users.email FROM books
+LEFT JOIN users ON books.user_id = users.id;
+
+CREATE TABLE IF NOT EXISTS commentaries (
+    user_id SMALLINT UNSIGNED NOT NULL,
+    book_id SMALLINT UNSIGNED NOT NULL,
+    commentary SMALLTEXT NOT NULL,
+    PRIMARY KEY(user_id, book_id),
+    CONSTRAINT fk_com_users FOREIGN KEY (user_id) REFERENCES users(id),
+    CONSTRAINT fk_com_books FOREIGN KEY (book_id) REFERENCES books(id);
+)ENGINE:InnoDB
+
+CREATE VIEW comments_vw AS (
+    SELECT books.title AS Titre, users.pseudo AS Utilisateur, commentaries.commentary AS Commentaire FROM books
+    INNER JOIN commentaries ON books.id = commentaries.book_id
+    INNER JOIN users ON commentaries.user_id = users.id
+);
